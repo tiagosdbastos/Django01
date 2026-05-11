@@ -1,0 +1,37 @@
+# --- Ambiente Virtual ---
+# Ignora a pasta oculta que você criou
+.venv/
+env/
+venv/
+ENV/
+.python-version
+# --- Python ---
+# Ignora arquivos compilados que o Python gera para rodar mais rápido
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Django ---
+# Ignora o banco de dados local (SQLite) - Você não quer subir seus dados de teste
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Ignora a pasta de arquivos enviados por usuários (Media)
+media/
+# Opcional: Ignora a pasta de arquivos estáticos coletados
+static/
+staticfiles/
+
+# --- Variáveis de Ambiente (SEGURANÇA!) ---
+# Jamais suba arquivos que contenham chaves de API ou senhas
+.env
+
+# --- VS Code & Sistema ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
